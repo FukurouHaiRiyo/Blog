@@ -1,0 +1,31 @@
+<head>
+      <title>W3.CSS Template</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+</head>
+<body class="w3-light-grey">
+
+<div class="w3-content" style="max-width:1400px"></div>
+
+<!-- Header -->
+<header class="w3-container w3-center w3-padding-32"> 
+  <h1><b>MY BLOG</b></h1>
+  <p>Welcome to the blog of <span class="w3-tag">Andrei</span></p>
+</header>
+
+<div class="w3-col l8 s12">
+      <!-- Blog entry -->
+      <div class="w3-card-4 w3-margin w3-white" *ngFor="let p of $blog | async">
+        <div class="w3-container">
+          <h3><b>{{p.content}}</b></h3>
+          <h5>{{p.titleDescription}}<span class="w3-opacity"></span></h5>
+        </div>
+    
+        <div class="w3-container">
+          <p>{{p.titleHeading}}</p>
+          <div class="w3-row">
+        </div>
+      </div>
+</div>

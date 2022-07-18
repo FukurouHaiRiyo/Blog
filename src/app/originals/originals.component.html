@@ -1,0 +1,17 @@
+<head>
+      <title>W3.CSS Template</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+</head>
+
+<div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+      <h4><b>About Me</b></h4>
+      <div class="w3-content w3-justify" style="max-width:600px" *ngFor="let p of $profile | async">
+        <h4>{{p.firstName}} {{p.lastName}}</h4>
+        <p>{{p.aboutMe}} I am currently a {{p.jobTitle}} at {{p.company}}
+            <br>Wanna se my protofolio? <a href="{{p.portofolio}}"><b>Click here</b></a>
+        </p>
+      </div>
+</div>
